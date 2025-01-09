@@ -1,5 +1,4 @@
 /// <reference types="Cypress" />
-const faker= require('faker')
 
 describe('Central de Atendimento ao Cliente TAT', function() {
     beforeEach(function () {
@@ -7,7 +6,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         cy.visit('./src/privacy.html')
     })
       
-    it.only('verifica o título da aplicação', function () {
+    it('verifica o título da aplicação', function () {
         //let text = cy.get('#title').as('texto')
         //cy.log(cy.get('@texto').invoke('text').invoke('toString'))
 

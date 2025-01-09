@@ -220,14 +220,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
                     .should('have.attr', 'href')
                     .should('match', /^\S+$/)
                     .should('be.a', 'string')
-                //cy.wrap($el.attr('href')).should('not.be.null')
-                //expect($el.attr('target')).to.equal('_blank')
             })
-        
-        //.should('not.be.null')
-        //cy.get('@target').each((object) => {
-        //    cy.log(object.val)
-        //})
    
     })
 
@@ -237,7 +230,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     })
 
 
-    it.only('testa a página da política de privacidade de forma independente', () => {
+    it('testa a página da política de privacidade de forma independente', () => {
         //cy.url().should('match', /^.*index\.html$/)
         
         cy.get('#privacy > a[href]').then($a => {

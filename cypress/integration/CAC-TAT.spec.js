@@ -95,7 +95,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
     })
 
     it('fill Mandatory Fields And Submit login', () => {
-        let fields = {
+        const fields = {
             firstName: faker.name.firstName(),
             lastName: faker.name.lastName(),
             email: faker.internet.email(),
@@ -103,7 +103,7 @@ describe('Central de Atendimento ao Cliente TAT', function() {
         }
 
         cy.log('custom command will be called')
-        cy.fillMandatoryFieldsAndSubmitlogin(fields);
+        cy.fillMandatoryFieldsAndSubmitLogin(fields);
     })
 
     it('preenche os campos (identificados por contains) obrigatórios e envia o formulário', function () {

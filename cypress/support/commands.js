@@ -25,7 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 // -- This is a parent command --
-Cypress.Commands.add('fillMandatoryFieldsAndSubmitlogin', (fields) => { 
+Cypress.Commands.add('fillMandatoryFieldsAndSubmitLogin', (fields) => { 
     cy.get('#firstName').type(fields.firstName)
     cy.get('#lastName').type(fields.lastName)
     cy.get('#email').type(fields.email)
